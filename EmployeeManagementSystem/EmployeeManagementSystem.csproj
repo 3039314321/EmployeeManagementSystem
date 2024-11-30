@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeManagementSystem.Data\EmployeeManagementSystem.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="EmployeeManagementSystem\Form1.cs" />
+    <Compile Remove="EmployeeManagementSystem\Form1.Designer.cs" />
+    <Compile Remove="EmployeeManagementSystem\Program.cs" />
+    <Compile Remove="EmployeeManagementSystem\Properties\AssemblyInfo.cs" />
+    <Compile Remove="EmployeeManagementSystem\Properties\Resources.Designer.cs" />
+    <Compile Remove="EmployeeManagementSystem\Properties\Settings.Designer.cs" />
+    <EmbeddedResource Remove="EmployeeManagementSystem\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Maikebing.System.Windows.Forms.DataVisualization" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+    <PackageReference Include="Mina" Version="2.0.12" />
+    <PackageReference Include="MySql.Data" Version="9.1.0" />
+    <PackageReference Include="MySqlClient" Version="5.5.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.0" />
+  </ItemGroup>
+</Project>
